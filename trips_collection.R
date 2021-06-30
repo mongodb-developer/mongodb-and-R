@@ -9,7 +9,7 @@ install.packages("mongolite")
 library(mongolite)
 
 # This is the connection_string. You can get the exact url from your mongodb cluster screen
-connection_string = 'mongodb+srv://m001-student:m001-mongodb-basics@sandbox.qurli.mongodb.net/myFirstDatabase'
+connection_string = 'mongodb+srv://<username>:<pwd>@<cluster-name>.mongodb.net/sample_training'
 
 # get the data by specifying the database name, collection and connection url
 trips_collection = mongo(collection="trips", db="sample_training", url=connection_string)
